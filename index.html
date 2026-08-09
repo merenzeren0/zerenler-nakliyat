@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0d0e10">
+<title>Zerenler Nakliyat | Evden Eve & Şehirler Arası Nakliyat</title>
+<meta name="description" content="Zerenler Nakliyat — evden eve, şehirler arası, parça eşya, profesyonel paketleme ve montaj-demontaj. Ücretsiz ekspertiz ve taşıma öncesi net fiyatlandırma.">
+<style>
+:root{
+  --ink:#0d0e10;--ink2:#17191c;--paper:#fbfaf7;--warm:#f2efe8;--white:#fff;
+  --gold:#c39a54;--gold2:#e6c98c;--red:#a51d25;--green:#1fa75b;
+  --muted:#6d6d6d;--line:#e8e3da;--shadow:0 24px 70px rgba(0,0,0,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+img{display:block;max-width:100%}a{text-decoration:none;color:inherit}
+.container{width:min(1220px,92%);margin:auto}
+.topline{background:#08090a;color:#e9e6df;font-size:13px;border-bottom:1px solid #ffffff12}
+.topline .container{min-height:40px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.topphones{display:flex;gap:18px}.topphones a{font-weight:800}.topphones a:hover{color:var(--gold2)}
+.header{position:sticky;top:0;z-index:100;background:rgba(251,250,247,.93);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.06)}
+.nav{height:86px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.logo img{width:186px;height:66px;object-fit:contain}
+.menu{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:750}
+.menu a{position:relative}.menu a:not(.navcta):after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:2px;background:var(--gold);transition:.25s}.menu a:hover:after{right:0}
+.navcta{padding:12px 17px;background:var(--ink);color:#fff;border-radius:999px}
+.menuBtn{display:none;border:0;background:var(--ink);color:#fff;width:44px;height:44px;border-radius:50%;font-size:21px}
+
+.hero{min-height:730px;position:relative;color:#fff;display:flex;align-items:center;overflow:hidden;background:#0b0c0e}
+.hero:before{content:"";position:absolute;inset:0;background:url("assets/hero.jpeg") center 53%/cover no-repeat;transform:scale(1.02)}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,5,6,.91) 0%,rgba(5,6,7,.73) 43%,rgba(5,6,7,.20) 78%),linear-gradient(0deg,rgba(0,0,0,.45),transparent 48%)}
+.heroContent{position:relative;z-index:2;max-width:790px;padding:92px 0 120px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold2);font-weight:800;font-size:12px;letter-spacing:1.8px;text-transform:uppercase}
+.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}
+.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,6.7vw,84px);font-weight:500;line-height:1.02;letter-spacing:-2.2px;margin:17px 0 22px}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{max-width:700px;color:#e7e7e7;font-size:19px;line-height:1.75}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 20px;border-radius:999px;font-weight:850;font-size:14px;border:1px solid transparent;transition:.22s}
+.btn:hover{transform:translateY(-2px)}
+.btnGold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#121212;box-shadow:0 8px 28px rgba(195,154,84,.25)}
+.btnGlass{border-color:#ffffff55;background:#ffffff12;color:#fff;backdrop-filter:blur(8px)}
+.heroProof{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.heroProof span{padding:9px 13px;border:1px solid #ffffff28;border-radius:999px;background:#0005;font-size:12px;color:#f3f3f3}
+
+.quick{position:relative;z-index:10;margin-top:-66px}
+.quickGrid{display:grid;grid-template-columns:repeat(4,1fr);background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.quickItem{padding:26px 25px;border-right:1px solid var(--line)}
+.quickItem:last-child{border:0}.quickIcon{font-size:22px;color:var(--gold);margin-bottom:8px}
+.quickItem b{display:block;font-size:16px}.quickItem small{color:var(--muted)}
+
+section{padding:90px 0}
+.sectionHead{max-width:780px;margin:0 auto 44px;text-align:center}
+.sectionHead .over{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:900}
+.sectionHead h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,4.6vw,58px);font-weight:500;line-height:1.1;letter-spacing:-1px;margin:10px 0 14px}
+.sectionHead p{color:var(--muted);font-size:16px;margin:0}
+
+.storyGrid{display:grid;grid-template-columns:1.02fr .98fr;gap:65px;align-items:center}
+.storyVisual{position:relative}
+.storyVisual img{width:100%;height:610px;object-fit:cover;border-radius:4px}
+.storyBadge{position:absolute;right:-18px;bottom:28px;background:var(--ink);color:#fff;padding:22px 24px;width:250px;box-shadow:var(--shadow)}
+.storyBadge strong{display:block;font-family:Georgia,serif;font-size:25px;color:var(--gold2);font-weight:500}
+.storyText .over{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:900}
+.storyText h2{font-family:Georgia,serif;font-size:51px;font-weight:500;line-height:1.08;margin:12px 0 20px}
+.storyText p{color:var(--muted);font-size:16px;line-height:1.85}
+.promiseList{display:grid;grid-template-columns:1fr 1fr;gap:14px 26px;margin:26px 0}
+.promise{display:flex;gap:10px;font-weight:760;font-size:14px}
+.promise i{font-style:normal;color:var(--gold);font-weight:900}
+
+.services{background:var(--warm)}
+.serviceGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{position:relative;background:#fff;min-height:270px;padding:31px;border:1px solid #e5dfd4;overflow:hidden;transition:.25s}
+.service:before{content:"";position:absolute;left:0;bottom:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold),transparent);transform:scaleX(0);transform-origin:left;transition:.25s}
+.service:hover{transform:translateY(-5px);box-shadow:0 18px 45px #00000012}.service:hover:before{transform:scaleX(1)}
+.sicon{width:48px;height:48px;border:1px solid #d8c7a6;color:var(--gold);display:grid;place-items:center;border-radius:50%;font-size:20px}
+.service h3{font-family:Georgia,serif;font-size:24px;font-weight:500;margin:20px 0 10px}
+.service p{color:var(--muted);font-size:14px;line-height:1.75}
+
+.proof{background:var(--ink);color:#fff}
+.proofGrid{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px;align-items:center}
+.proofCopy .over{color:var(--gold2);font-size:12px;letter-spacing:2px;font-weight:900;text-transform:uppercase}
+.proofCopy h2{font-family:Georgia,serif;font-size:52px;font-weight:500;line-height:1.08;margin:12px 0 20px}
+.proofCopy p{color:#c8c8c8;line-height:1.85}
+.proofSteps{display:grid;gap:12px;margin-top:26px}
+.proofStep{display:grid;grid-template-columns:43px 1fr;gap:15px;padding:14px 0;border-bottom:1px solid #ffffff16}
+.proofStep strong{width:38px;height:38px;border:1px solid #8c744b;color:var(--gold2);border-radius:50%;display:grid;place-items:center}
+.proofStep b{display:block;margin-bottom:3px}.proofStep span{font-size:13px;color:#aaa}
+.proofVisual{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.proofVisual img{width:100%;height:300px;object-fit:cover}
+.proofVisual img:first-child{grid-row:span 2;height:610px}
+
+.galleryGrid{display:grid;grid-template-columns:1.45fr .8fr .8fr;grid-auto-rows:255px;gap:10px}
+.galleryGrid figure{margin:0;position:relative;overflow:hidden;background:#ddd}
+.galleryGrid img{width:100%;height:100%;object-fit:cover;transition:.45s}
+.galleryGrid figure:hover img{transform:scale(1.035)}
+.galleryGrid .gBig{grid-row:span 2}
+.galleryGrid figcaption{position:absolute;left:14px;bottom:14px;background:#0d0e10d9;color:#fff;padding:8px 11px;font-size:12px;border-left:2px solid var(--gold)}
+
+.process{background:#fff}
+.processGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.processItem{padding:32px 24px;border-right:1px solid var(--line)}
+.processItem:last-child{border:0}
+.processNo{font-family:Georgia,serif;color:#c8ae7b;font-size:38px}
+.processItem h3{margin:3px 0 9px;font-size:18px}.processItem p{color:var(--muted);font-size:13px;line-height:1.7}
+
+.offer{background:linear-gradient(135deg,#16181b,#090a0b);color:#fff}
+.offerGrid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.offer h2{font-family:Georgia,serif;font-size:49px;font-weight:500;line-height:1.08;margin:10px 0 15px}
+.offer p{color:#bbb;line-height:1.8}
+.contactCards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.contactCard{border:1px solid #ffffff1f;padding:18px;background:#ffffff08}
+.contactCard small{display:block;color:#999}.contactCard b{font-size:18px;color:var(--gold2)}
+.form{background:#fff;color:var(--ink);padding:28px;border-radius:4px;box-shadow:0 25px 70px #0005}
+.form h3{font-family:Georgia,serif;font-size:28px;font-weight:500;margin:0 0 18px}
+.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:850;color:#555}
+.field input,.field select,.field textarea{width:100%;padding:14px;border:1px solid #ddd9d0;background:#fbfaf7;border-radius:3px;font:inherit;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+.form button{width:100%;margin-top:14px;border:0;cursor:pointer}
+.formNote{font-size:11px;color:#888;margin-top:9px;text-align:center}
+
+.faq{max-width:920px;margin:auto}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{font-size:17px;font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary:after{content:"+";color:var(--gold);font-size:22px}.faq details[open] summary:after{content:"−"}
+.faq p{color:var(--muted);margin:12px 0 0;line-height:1.75}
+
+.bottomCta{padding:0 0 90px}
+.bottomBox{background:var(--gold);padding:42px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.bottomBox h2{font-family:Georgia,serif;font-size:36px;font-weight:500;margin:0}.bottomBox p{margin:5px 0 0}
+.bottomBox .btn{background:#101214;color:#fff}
+
+footer{background:#090a0b;color:#aaa;padding:54px 0 96px}
+.footerGrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:38px}
+.footerLogo{background:#fff;padding:9px 13px;width:185px;margin-bottom:16px}.footerLogo img{width:100%}
+footer h4{color:#fff;margin:0 0 15px}footer a{display:block;margin:8px 0;font-size:14px}footer a:hover{color:var(--gold2)}
+.footerIntro{max-width:390px;font-size:14px;line-height:1.8}
+.copyright{border-top:1px solid #ffffff14;margin-top:38px;padding-top:20px;font-size:12px}
+
+.floatbar{position:fixed;right:18px;bottom:18px;z-index:120;display:flex;flex-direction:column;gap:9px}
+.floatbar a{min-width:164px;text-align:center;padding:13px 16px;border-radius:999px;color:#fff;font-size:13px;font-weight:900;box-shadow:0 10px 28px #0004}
+.floatWa{background:var(--green)}.floatCall{background:var(--ink)}
+
+@media(max-width:960px){
+ .menu{display:none;position:absolute;top:86px;left:0;right:0;background:var(--paper);padding:20px 4%;box-shadow:0 12px 30px #0002;flex-direction:column;align-items:flex-start}
+ .menu.open{display:flex}.menuBtn{display:block}
+ .storyGrid,.proofGrid,.offerGrid{grid-template-columns:1fr}.serviceGrid{grid-template-columns:1fr 1fr}
+ .quickGrid{grid-template-columns:1fr 1fr}.storyBadge{right:15px}
+ .footerGrid{grid-template-columns:1fr 1fr}.galleryGrid{grid-template-columns:1fr 1fr}.galleryGrid .gBig{grid-column:span 2;grid-row:auto}
+}
+@media(max-width:620px){
+ .topline .container{justify-content:center}.topline .container>span{display:none}.topphones{gap:10px;font-size:12px}
+ .logo img{width:158px}.hero{min-height:670px}.hero:before{background-position:61% center}.hero h1{font-size:47px;letter-spacing:-1px}.hero p{font-size:16px}
+ .quick{margin-top:-35px}.quickGrid,.serviceGrid,.contactCards,.formGrid,.footerGrid{grid-template-columns:1fr}
+ .quickItem{border-right:0;border-bottom:1px solid var(--line)}.quickItem:last-child{border:0}
+ section{padding:70px 0}.storyText h2,.proofCopy h2,.offer h2{font-size:39px}.storyVisual img{height:480px}
+ .promiseList{grid-template-columns:1fr}.proofVisual{grid-template-columns:1fr}.proofVisual img,.proofVisual img:first-child{height:330px;grid-row:auto}
+ .galleryGrid{grid-template-columns:1fr;grid-auto-rows:300px}.galleryGrid .gBig{grid-column:auto}
+ .processGrid{grid-template-columns:1fr 1fr}.processItem:nth-child(2){border-right:0}.processItem:nth-child(-n+2){border-bottom:1px solid var(--line)}
+ .bottomBox{flex-direction:column;align-items:flex-start;padding:30px}.bottomBox h2{font-size:31px}
+ .floatbar{left:10px;right:10px;bottom:10px;flex-direction:row}.floatbar a{flex:1;min-width:0;padding:12px 8px}
+}
+</style>
+</head>
+<body>
+<div class="topline">
+ <div class="container">
+   <span>İstanbul merkezli • Türkiye geneli profesyonel taşımacılık</span>
+   <div class="topphones">
+     <a href="tel:+905073842936">0507 384 29 36</a>
+     <a href="tel:+905357341759">0535 734 17 59</a>
+   </div>
+ </div>
+</div>
+
+<header class="header">
+ <div class="container nav">
+   <a class="logo" href="#anasayfa"><img src="assets/logo.png" alt="Zerenler Nakliyat"></a>
+   <nav class="menu" id="menu">
+     <a href="#kurumsal">Kurumsal</a><a href="#hizmetler">Hizmetler</a><a href="#calismalar">Çalışmalarımız</a>
+     <a href="#surec">Taşıma Süreci</a><a href="#sss">S.S.S.</a><a class="navcta" href="#teklif">Ücretsiz Teklif Al</a>
+   </nav>
+   <button class="menuBtn" id="menuBtn" aria-label="Menü">☰</button>
+ </div>
+</header>
+
+<main id="anasayfa">
+<section class="hero">
+ <div class="container">
+  <div class="heroContent">
+   <div class="eyebrow">Zerenler Nakliyat</div>
+   <h1>Taşınmanın en <em>güvenli</em> hali.</h1>
+   <p>Evden eve ve şehirler arası taşımacılıkta; keşiften paketlemeye, yüklemeden teslimata kadar her aşamayı planlı ve özenli şekilde yönetiyoruz.</p>
+   <div class="actions">
+    <a class="btn btnGold" href="#teklif">Ücretsiz Ekspertiz & Teklif</a>
+    <a class="btn btnGlass" href="https://wa.me/905073842936?text=Merhaba%2C%20nakliyat%20i%C3%A7in%20bilgi%20ve%20fiyat%20almak%20istiyorum." target="_blank">WhatsApp'tan Yaz</a>
+   </div>
+   <div class="heroProof"><span>Gerçek araçlarımız</span><span>Gerçek çalışma fotoğrafları</span><span>Özenli paketleme</span><span>Taşıma öncesi net planlama</span></div>
+  </div>
+ </div>
+</section>
+
+<div class="quick">
+ <div class="container quickGrid">
+  <div class="quickItem"><div class="quickIcon">◇</div><b>Ücretsiz Ekspertiz</b><small>Koşulları önceden değerlendiriyoruz.</small></div>
+  <div class="quickItem"><div class="quickIcon">✓</div><b>Net Fiyatlandırma</b><small>Taşıma öncesi kapsamı netleştiriyoruz.</small></div>
+  <div class="quickItem"><div class="quickIcon">▣</div><b>Özenli Paketleme</b><small>Eşyaya uygun koruma uyguluyoruz.</small></div>
+  <div class="quickItem"><div class="quickIcon">↗</div><b>Türkiye Geneli</b><small>Şehir içi ve şehirler arası çözümler.</small></div>
+ </div>
+</div>
+
+<section id="kurumsal">
+ <div class="container storyGrid">
+  <div class="storyVisual">
+   <img src="assets/fleet.jpeg" alt="Zerenler Nakliyat araçları">
+   <div class="storyBadge"><strong>İşi gösteriyoruz.</strong> Sitemizdeki taşıma fotoğrafları kendi çalışmalarımızdan.</div>
+  </div>
+  <div class="storyText">
+   <div class="over">Kurumsal yaklaşım</div>
+   <h2>Eşyanızı taşırken güveninizi de koruyoruz.</h2>
+   <p>İyi bir taşınma, kamyon kapıya geldiğinde değil; doğru planlama yapıldığında başlar. Eşya yapısı, bina koşulları, paketleme ihtiyacı ve taşıma rotası önceden değerlendirilir. Böylece taşıma günü daha düzenli, kontrollü ve öngörülebilir ilerler.</p>
+   <p>Zerenler Nakliyat olarak müşterinin en çok önem verdiği iki noktayı merkeze alıyoruz: <b>eşyaya özen</b> ve <b>iletişimde açıklık</b>.</p>
+   <div class="promiseList">
+    <div class="promise"><i>✓</i> Ücretsiz ekspertiz</div>
+    <div class="promise"><i>✓</i> Net fiyat yaklaşımı</div>
+    <div class="promise"><i>✓</i> Düzenli ekip çalışması</div>
+    <div class="promise"><i>✓</i> Koruyucu ambalajlama</div>
+    <div class="promise"><i>✓</i> Montaj / demontaj</div>
+    <div class="promise"><i>✓</i> Şehirler arası taşıma</div>
+    <div class="promise"><i>✓</i> Eşya depolama</div>
+   </div>
+   <a class="btn btnGold" href="#teklif">Taşınmam İçin Teklif Al</a>
+  </div>
+ </div>
+</section>
+
+<section class="services" id="hizmetler">
+ <div class="container">
+  <div class="sectionHead"><div class="over">Hizmetlerimiz</div><h2>Her taşınma için doğru plan.</h2><p>İhtiyacınıza göre hizmet kapsamını belirliyor, gereksiz kalemler yerine gerçekten gereken çözümleri planlıyoruz.</p></div>
+  <div class="serviceGrid">
+   <article class="service"><div class="sicon">⌂</div><h3>Evden Eve Nakliyat</h3><p>Evinizdeki eşyaların hazırlanması, paketlenmesi, yüklenmesi, taşınması ve yeni adrese ulaştırılması.</p></article>
+   <article class="service"><div class="sicon">↔</div><h3>Şehirler Arası Nakliyat</h3><p>Uzun mesafeli taşınmalarda yükleme, araç planlaması ve teslimat sürecinin baştan sona organize edilmesi.</p></article>
+   <article class="service"><div class="sicon">▣</div><h3>Parça Eşya Taşıma</h3><p>Komple araç gerektirmeyen mobilya, beyaz eşya ve az miktardaki yükler için uygun taşıma çözümü.</p></article>
+   <article class="service"><div class="sicon">▦</div><h3>Eşya Depolama</h3><p>Taşınma, tadilat veya geçici bekleme dönemlerinde eşyalarınız için düzenli ve kontrollü depolama çözümleri.</p></article>
+   <article class="service"><div class="sicon">◫</div><h3>Profesyonel Paketleme</h3><p>Mobilya ve hassas yüzeylerin taşıma sırasında korunması için uygun koruyucu malzemelerle hazırlanması.</p></article>
+   <article class="service"><div class="sicon">⚒</div><h3>Montaj & Demontaj</h3><p>Taşımaya uygun mobilyaların sökülmesi ve yeni adreste yeniden kurulmasına yönelik destek.</p></article>
+   <article class="service"><div class="sicon">◇</div><h3>Ücretsiz Ekspertiz</h3><p>Eşya miktarı, bina koşulları ve hizmet kapsamı değerlendirilerek taşıma planının önceden netleştirilmesi.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="proof">
+ <div class="container proofGrid">
+  <div class="proofCopy">
+   <div class="over">Özen detayda başlar</div>
+   <h2>Koruma, paketleme ve kontrollü taşıma.</h2>
+   <p>Müşterinin görmek istediği şey vaat değil, nasıl çalıştığınızdır. Bu yüzden kendi iş fotoğraflarımızı öne çıkarıyoruz. Mobilyaların koruyucu malzemeyle sarılması ve ekibin sahadaki uygulaması, hizmet kalitesini doğrudan gösteriyor.</p>
+   <div class="proofSteps">
+    <div class="proofStep"><strong>01</strong><div><b>Eşya analizi</b><span>Mobilya ve hassas parçalar ayrı değerlendirilir.</span></div></div>
+    <div class="proofStep"><strong>02</strong><div><b>Koruyucu paketleme</b><span>Yüzeyler uygun malzemelerle kaplanır ve sabitlenir.</span></div></div>
+    <div class="proofStep"><strong>03</strong><div><b>Düzenli yükleme</b><span>Araç içi yerleşim taşıma planına göre yapılır.</span></div></div>
+    <div class="proofStep"><strong>04</strong><div><b>Kontrollü teslimat</b><span>Yeni adreste planlanan şekilde süreç tamamlanır.</span></div></div>
+   </div>
+  </div>
+  <div class="proofVisual">
+   <img src="assets/packing_team.jpeg" alt="Zerenler Nakliyat ekibi eşya paketlerken">
+   <img src="assets/packing_sofa.jpeg" alt="Koruyucu ambalajlı koltuk">
+   <img src="assets/packing_tall.jpeg" alt="Koruyucu ambalajlı büyük mobilyalar">
+  </div>
+ </div>
+</section>
+
+<section id="calismalar">
+ <div class="container">
+  <div class="sectionHead"><div class="over">Gerçek çalışmalarımız</div><h2>Sözden önce işçilik.</h2><p>Fotoğrafların tamamı müşterinin hizmeti satın almadan önce nasıl çalıştığımızı görebilmesi için seçildi.</p></div>
+  <div class="galleryGrid">
+   <figure class="gBig"><img src="assets/truck_city.jpeg" alt="Zerenler Nakliyat aracı iş başında"><figcaption>Saha çalışması</figcaption></figure>
+   <figure><img src="assets/packing_room.jpeg" alt="Paketlenmiş ev eşyaları"><figcaption>Komple paketleme</figcaption></figure>
+   <figure><img src="assets/packing_boxes.jpeg" alt="Paketlenmiş eşyalar ve kutular"><figcaption>Düzenli hazırlık</figcaption></figure>
+   <figure><img src="assets/packed_panorama.jpeg" alt="Taşımaya hazırlanmış eşyalar"><figcaption>Koruyucu ambalaj</figcaption></figure>
+   <figure><img src="assets/fleet.jpeg" alt="Zerenler Nakliyat araç filosu"><figcaption>Araçlarımız</figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section class="process" id="surec">
+ <div class="container">
+  <div class="sectionHead"><div class="over">Taşıma süreci</div><h2>Belirsizliği azaltan 4 adım.</h2><p>Taşınma gününde sürpriz yaşamamak için işe başlamadan önce kapsamı mümkün olduğunca netleştiriyoruz.</p></div>
+  <div class="processGrid">
+   <div class="processItem"><div class="processNo">01</div><h3>Bilgi & Keşif</h3><p>Adres, kat, eşya ve bina koşulları değerlendirilir.</p></div>
+   <div class="processItem"><div class="processNo">02</div><h3>Plan & Fiyat</h3><p>Hizmet kapsamı ve taşıma planı netleştirilir.</p></div>
+   <div class="processItem"><div class="processNo">03</div><h3>Paketleme & Yükleme</h3><p>Eşyalar hazırlanır ve kontrollü şekilde araca yüklenir.</p></div>
+   <div class="processItem"><div class="processNo">04</div><h3>Teslimat</h3><p>Yeni adrese ulaştırılır ve planlanan işlemler tamamlanır.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="offer" id="teklif">
+ <div class="container offerGrid">
+  <div>
+   <div class="eyebrow">Hızlı iletişim</div>
+   <h2>Taşınmanız için ücretsiz ön değerlendirme alın.</h2>
+   <p>Formu doldurduğunuzda bilgileriniz WhatsApp mesajına hazırlanır. Göndermeden önce mesajı görebilir ve düzenleyebilirsiniz.</p>
+   <div class="contactCards">
+    <a class="contactCard" href="tel:+905073842936"><small>Telefon 1</small><b>0507 384 29 36</b></a>
+    <a class="contactCard" href="tel:+905357341759"><small>Telefon 2</small><b>0535 734 17 59</b></a>
+   </div>
+  </div>
+  <form class="form" id="quoteForm">
+   <h3>Ücretsiz Teklif Formu</h3>
+   <div class="formGrid">
+    <div class="field"><label>Ad Soyad</label><input id="name" placeholder="Adınız soyadınız"></div>
+    <div class="field"><label>Telefon</label><input id="phone" inputmode="tel" placeholder="05xx xxx xx xx"></div>
+    <div class="field"><label>Nereden?</label><input id="from" placeholder="İlçe / İl"></div>
+    <div class="field"><label>Nereye?</label><input id="to" placeholder="İlçe / İl"></div>
+    <div class="field"><label>Taşıma Türü</label><select id="type"><option>Evden Eve Nakliyat</option><option>Şehirler Arası Nakliyat</option><option>Parça Eşya Taşıma</option><option>Eşya Depolama</option><option>Paketleme / Montaj</option></select></div>
+    <div class="field"><label>Tahmini Tarih</label><input id="date" type="date"></div>
+    <div class="field full"><label>Not</label><textarea id="note" rows="3" placeholder="Kat, asansör, eşya miktarı veya eklemek istediğiniz bilgi"></textarea></div>
+   </div>
+   <button class="btn btnGold" type="submit">WhatsApp'tan Teklif İste</button>
+   <div class="formNote">Form gönderildiğinde WhatsApp açılır; mesaj sizin onayınızla gönderilir.</div>
+  </form>
+ </div>
+</section>
+
+<section id="sss">
+ <div class="container">
+  <div class="sectionHead"><div class="over">Sıkça sorulanlar</div><h2>Taşınmadan önce bilinmesi gerekenler.</h2></div>
+  <div class="faq">
+   <details><summary>Ekspertiz ücretli mi?</summary><p>Hayır. Taşıma koşullarının değerlendirilmesi ve hizmet kapsamının belirlenmesi için ücretsiz ekspertiz seçeneği sunuyoruz.</p></details>
+   <details><summary>Fiyat hangi bilgilere göre belirleniyor?</summary><p>Eşya miktarı, kat ve bina koşulları, iki adres arasındaki mesafe, paketleme ihtiyacı ve talep edilen ek hizmetler değerlendirilir.</p></details>
+   <details><summary>Eşyaları paketliyor musunuz?</summary><p>Taşıma planına göre mobilya ve diğer eşyalar uygun koruyucu malzemelerle hazırlanabilir. Sitedeki paketleme fotoğrafları kendi çalışmalarımızdandır.</p></details>
+   <details><summary>Eşya depolama hizmetiniz var mı?</summary><p>Evet. Taşınma tarihi ile yeni adrese geçiş arasında süre olması, tadilat veya geçici alan ihtiyacı gibi durumlarda eşya depolama hizmeti sunuyoruz. Süre ve eşya miktarına göre planlama yapılır.</p></details>
+   <details><summary>Şehirler arası taşıma yapıyor musunuz?</summary><p>Evet. İstanbul çıkışlı ve Türkiye geneli şehirler arası taşıma çözümleri sunuyoruz.</p></details>
+   <details><summary>Taşınma öncesinde neleri bildirmeliyim?</summary><p>İki adres, kat bilgileri, bina/asansör durumu, yaklaşık eşya miktarı ve özel dikkat gerektiren eşyaları paylaşmanız doğru planlama için yardımcı olur.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="bottomCta">
+ <div class="container bottomBox">
+  <div><h2>Taşınma gününü şansa bırakmayın.</h2><p>İki hattımızdan bize ulaşın veya WhatsApp üzerinden hızlıca teklif isteyin.</p></div>
+  <a class="btn" href="https://wa.me/905073842936?text=Merhaba%2C%20ta%C5%9F%C4%B1nma%20i%C3%A7in%20%C3%BCcretsiz%20ekspertiz%20ve%20fiyat%20bilgisi%20almak%20istiyorum." target="_blank">WhatsApp'tan İletişim</a>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container">
+  <div class="footerGrid">
+   <div><div class="footerLogo"><img src="assets/logo.png" alt="Zerenler Nakliyat"></div><div class="footerIntro">Evden eve ve şehirler arası taşımacılıkta; planlama, paketleme ve dikkatli taşıma yaklaşımıyla hizmet veriyoruz.</div></div>
+   <div><h4>Hizmetler</h4><a href="#hizmetler">Evden Eve Nakliyat</a><a href="#hizmetler">Şehirler Arası</a><a href="#hizmetler">Parça Eşya</a><a href="#hizmetler">Eşya Depolama</a><a href="#hizmetler">Paketleme</a></div>
+   <div><h4>Kurumsal</h4><a href="#kurumsal">Hakkımızda</a><a href="#calismalar">Çalışmalarımız</a><a href="#surec">Taşıma Süreci</a><a href="#sss">S.S.S.</a></div>
+   <div><h4>İletişim</h4><a href="tel:+905073842936">0507 384 29 36</a><a href="tel:+905357341759">0535 734 17 59</a><a href="https://wa.me/905073842936" target="_blank">WhatsApp</a><span style="font-size:13px">İstanbul • Türkiye Geneli</span></div>
+  </div>
+  <div class="copyright">© 2026 Zerenler Nakliyat. Tüm hakları saklıdır.</div>
+ </div>
+</footer>
+
+<div class="floatbar">
+ <a class="floatWa" href="https://wa.me/905073842936?text=Merhaba%2C%20nakliyat%20i%C3%A7in%20bilgi%20almak%20istiyorum." target="_blank">WhatsApp</a>
+ <a class="floatCall" href="tel:+905073842936">Hemen Ara</a>
+</div>
+
+<script>
+const menuBtn=document.getElementById("menuBtn"),menu=document.getElementById("menu");
+menuBtn.addEventListener("click",()=>menu.classList.toggle("open"));
+menu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>menu.classList.remove("open")));
+
+document.getElementById("quoteForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const val=id=>document.getElementById(id).value.trim();
+ const msg=[
+  "Merhaba, Zerenler Nakliyat'tan ücretsiz teklif almak istiyorum.",
+  "",
+  "Ad Soyad: "+(val("name")||"-"),
+  "Telefon: "+(val("phone")||"-"),
+  "Nereden: "+(val("from")||"-"),
+  "Nereye: "+(val("to")||"-"),
+  "Hizmet: "+val("type"),
+  "Tarih: "+(val("date")||"-"),
+  "Not: "+(val("note")||"-")
+ ].join("\n");
+ window.open("https://wa.me/905073842936?text="+encodeURIComponent(msg),"_blank");
+});
+</script>
+</body>
+</html>
